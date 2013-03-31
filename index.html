@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Sistema de Control VIKTOR</title>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/goaamb/G.js"></script>
+<script type="text/javascript" src="js/viktor.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.2.min.css"/>
+</head>
+<body>
+	<section id="listaProductos">
+		<h1>Productos</h1>
+		<section class="botones"><a href="#" title="Nuevo" class="nuevo" onclick="return nuevoProducto();"></a><a href="#" title="Modificar"  onclick="return modificarProducto();"class="modificar"></a><a href="#" title="Deshabilitar"  onclick="return deshabilitarProducto();" class="deshabilitar"></a><a href="#" title="Habilitar"  onclick="return habilitarProducto();" class="habilitar"></a></section>
+		<section class="contenido"><ul></ul></section>
+	</section>
+	<section id="listaVendedores"></section>
+	<section></section>
+	<form id="nuevoProducto" onsubmit="return false;" title="Nuevo Producto">
+		<div><label><strong>Nombre:</strong> <input name="nombre"/></label></div>
+		<div><label><strong>Abrebviatura:</strong> <input name="abreviatura"/></label></div>
+		<div><label><strong>Precio:</strong> <input name="precio"/></label></div>
+	</form>
+</body>
+</html>
